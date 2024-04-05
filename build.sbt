@@ -8,6 +8,7 @@ lazy val root = (project in file("."))
   //.enablePlugins(PlayNettyServer).disablePlugins(PlayPekkoHttpServer) // uncomment to use the Netty backend
   .settings(
     name := "play-scala-rest-api-example",
+    PlayKeys.playDefaultPort := 8080,
     libraryDependencies ++= Seq(
       guice,
       "org.joda" % "joda-convert" % "2.2.3",

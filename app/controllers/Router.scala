@@ -10,6 +10,6 @@ class Router @Inject()(controller: HomeController) extends SimpleRouter {
 
   override def routes: Routes = {
     case GET(p"/") =>
-      controller.index()
+      controller.index
   }
 }
